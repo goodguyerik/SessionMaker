@@ -93,7 +93,7 @@ python main.py
 
 ## CLI flags
 
-- `--main-field`: override `MAIN_FIELD` for this run.
+- `--main-field`: set the conference/topic context for LLM prompts (for example `Database Technology`) to improve summary quality and scheduling relevance.
 - `--buffer-left`: override left buffer.
 - `--buffer-right`: override right buffer.
 - `--max-candidates`: override candidate pool size.
