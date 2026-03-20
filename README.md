@@ -113,8 +113,8 @@ Buffer quick explanation:
 
 Running `main.py` writes:
 
-- `resource/temp_papers_enriched.csv`
-- `resource/temp_slots.csv`
-- `resource/temp_papers.csv`
-- `resource/temp_unassigned_papers.csv`
-- `resource/temp_unfilled_slots.csv`
+- `resource/temp_papers_enriched.csv`: enriched paper table (summary + embedding) used by the scheduler.
+- `resource/temp_slots.csv`: final slot/session schedule after post-processing (or fallback schedule).
+- `resource/temp_papers.csv`: original papers plus `assigned_cluster_id`.
+- `resource/temp_unassigned_papers.csv`: papers that could not be placed in any slot.
+- `resource/temp_unfilled_slots.csv`: slots that still have remaining duration/capacity.
